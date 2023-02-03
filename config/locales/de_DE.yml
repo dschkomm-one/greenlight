@@ -335,8 +335,10 @@ de_DE:
     search:
       start: Suche beginnen...
   landing:
-    about: "%{href} ist eine benutzerfreundliche Oberfläche für das Open-Source-Webkonferenzsystem BigBlueButton. Sie können Ihre eigenen Räume erstellen, um Konferenzen zu veranstalten oder können bestehenden Konferenzen über einen kurzen und bequemen Link beitreten."
-    welcome: Willkommen zu BigBlueButton.
+          #about: "%{href} ist eine benutzerfreundliche Oberfläche für das Open-Source-Webkonferenzsystem BigBlueButton. Sie können Ihre eigenen Räume erstellen, um Konferenzen zu veranstalten oder können bestehenden Konferenzen über einen kurzen und bequemen Link beitreten."
+          #welcome: Willkommen zu BigBlueButton.
+    welcome: BigBlueButton (Komm.ONE intern)
+    about: Herzlich Willkommen zur Komm.ONE BigBlueButton Umgebung f&uuml;r die interne Nutzung.<br>Der Zugang ist aktuell noch begrenzt, und kann &uuml;ber ein <a href="https://support.komm-one.net/"><b>Ticket</b></a> beantragt werden.<br>Bitte beachten Sie die Hinweise zum <a href="https://www.komm.one/datenschutz"><b>Datenschutz.</b></a><!--<br>Eine Anleitung finden Sie unter <a href="#">Anleitungen.</a>-->
     video: Schauen Sie sich unsere Anleitung zur Verwendung von Greenlight an
     upgrade: "Zeigen Sie mir, wie ich auf Version 2.0. update!"
     version: "Wir haben eine neue Version von Greenlight veröffentlicht, aber Ihre Datenbank ist damit nicht kompatibel."

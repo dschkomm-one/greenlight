@@ -114,6 +114,12 @@ flash: { alert: I18n.t("registration.insecure_password") } unless User.secure_pa
     @auth = request.env['omniauth.auth']
 
     begin
+      if @auth['provider'] == "openid_connect"
+        field = ENV["OPENID_CONNECT_ROLE_FIELD"] || ""
+        #logger.info(@auth['extra']&.fetch('raw_info')&.fetch(field).first().to_s)
+        @auth['info']['roles'] = field.empty? ? nil : @auth['extra']&.fetch('raw_info')&.fetch(field).first().to_s
+        #logger.info(@auth['info']['roles'])
+      end
       process_signin
     rescue => e
       logger.error "Error authenticating via omniauth: #{e}"

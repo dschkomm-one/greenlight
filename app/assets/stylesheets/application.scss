@@ -51,7 +51,8 @@
 }
 
 html, body {
-  font-family: "Source Sans Pro" !important;
+  font-family: "DM Sans",arial,helvetica,sans-serif !important;
+  /*font-family: "Source Sans Pro" !important; */
   position: relative;
   width: 100%;
   height: 100%;
@@ -189,4 +190,17 @@ table {
 
 .nav-icon i {
   width: 35px;
+}
+.alert-info {
+    color: #003A40;
+    background-color: #E6F7F6;
+    border-color: #C5E6E5;
+}
+.primary-lighten {
+    background-color: #003A40 !important;
+    border-color: #E6F7F6 !important;
+    color: #E6F7F6 !important;
+}
+.room-block.current {
+    box-shadow: 0 0 10px #003a40;
 }

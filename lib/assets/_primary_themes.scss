@@ -212,7 +212,7 @@ input:focus, select:focus {
 
 .room-block {
   &.current {
-    box-shadow: 0 0 10px $primary-color-lighten;
+    box-shadow: 0 0 10px #003a40;
   }
 }
 
@@ -222,3 +222,4 @@ input:focus, select:focus {
     color: $primary-color;
   }
 }
+

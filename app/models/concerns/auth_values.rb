@@ -60,9 +60,11 @@ module AuthValues
     unless auth['info']['roles'].nil?
       roles = auth['info']['roles'].split(',')
 
+      logger.info("Support: Auth user #{user.email} has roles #{roles}")
       role_provider = auth['provider'] == "bn_launcher" ? auth['info']['customer'] : "greenlight"
       roles.each do |role_name|
         role = Role.find_by(provider: role_provider, name: role_name)
+        logger.info(role_name)
         user.set_role(role_name) if !role.nil? && !user.has_role?(role_name)
       end
     end
